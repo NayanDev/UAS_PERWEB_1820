@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frameset | Content</title>
+    <style>
+        section {
+            padding: 20px;
+        }
+        
+        h2 {
+            color: #fff;
+            background-color: #2f80ed;
+            display: block;
+            width: 500px;
+            margin: 15px auto;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        
+        .container-buku {
+            max-width: 800px;
+            margin: 0px auto;
+        }
+        
+        .buku {
+            box-sizing: border-box;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+        }
+        
+        h3 {
+            color: #2f80ed;
+            text-align: center;
+            padding-bottom: 10px;
+            border-bottom: 1px solid lightgray;
+        }
+        
+        .image {
+            border-radius: 5px;
+            width: 200px;
+            height: 300px;
+            margin: 20px;
+        }
+        
+        button {
+            width: 84%;
+            border: none;
+            color: #2f80ed;
+            font-weight: bold;
+            padding: 10px;
+            margin: 10px 20px;
+            border-radius: 5px;
+        }
+        
+        button:hover {
+            background-color: #ddd;
+        }
+        
+        @media (min-width: 600px) {
+            .container-buku {
+                display: flex;
+                justify-content: space-between;
+            }
+            .buku {
+                width: 30%;
+            }
+        }
+    </style>
+</head>
+
+<body bgcolor="#fff">
+    <h2 align="center">
+        <font face="Arial">
+            BUKU
+        </font>
+    </h2>
+    <section>
+        <div class="container-buku">
+            <div class="buku">
+                <h3>Cinta Paling Rumit</h3>
+                <img class="image" src="buku_1.jpg" alt="IMAGE">
+                <button>Detail Buku</button>
+            </div>
+            <div class="buku">
+                <h3>DILAN 1990</h3>
+                <img class="image" src="buku_2.jpg" alt="IMAGE">
+                <button>Detail Buku</button>
+            </div>
+            <div class="buku">
+                <h3>Perahu Kertas</h3>
+                <img class="image" src="buku_3.jpg" alt="IMAGE">
+                <button>Detail Buku</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

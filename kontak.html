@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frameset | Content</title>
+    <style>
+        h2 {
+            color: #fff;
+            background-color: #2f80ed;
+            display: block;
+            width: 500px;
+            margin: 15px auto;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        
+        section {
+            padding: 20px;
+        }
+        
+        table tr td {
+            padding: 10px 0;
+        }
+        
+        select {
+            width: 247px;
+        }
+        
+        input[type=submit],
+        input[type=reset] {
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #2f80ed;
+            margin: 5px 10px 5px 0px;
+            width: 100px;
+            font-weight: bold;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body bgcolor="#fff">
+    <h2 align="center">
+        <font face="Arial">
+            KONTAK
+        </font>
+    </h2>
+    <section>
+        <form method="POST" action="">
+            <table>
+                <tr>
+                    <td><b>Nama :</b></td>
+                    <td><input type="text" name="nama" size="30"></td>
+                </tr>
+                <tr>
+                    <td><b>Alamat :</b></td>
+                    <td><input type="text" name="alamat" size="30"></td>
+                </tr>
+                <tr>
+                    <td><b>Agama :</b></td>
+                    <td>
+                        <select name="agama" size="1">
+                            <option>Islam</option>
+                            <option>Kristen</option>
+                            <option>Budha</option>
+                            <option>Hindu</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Password :</b></td>
+                    <td><input type="password" name="password" size="30"></td>
+                </tr>
+            </table>
+            <b>Jenis Kelamin :</b>
+            <input checked type="radio" name="kelamin" value="pria"> pria
+            <input type="radio" name="kelamin" value="wanita"> Wanita <br><br>
+            <b>Hobi :</b> <br><br>
+            <input type="checkbox" name="hobi" value="soccer"> Sepakbola
+            <input checked type="checkbox" name="hobi" value="badminton"> Bulutangkis
+            <input type="checkbox" name="hobi" value="computer"> Komputer <br>
+            <input type="checkbox" name="hobi" value="game"> Permainan Video
+            <input checked type="checkbox" name="hobi" value="internet"> Internet <br><br>
+            <b>Komentar</b><br>
+            <textarea name="komentar" cols="45" rows="8"></textarea><br>
+            <input type="submit" value="kirim"><input type="reset" value="batal">
+        </form>
+    </section>
+</body>
+
+</html>
